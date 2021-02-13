@@ -48,7 +48,7 @@ const questions = () => {
         {
             type: "input",
             message: "What should the user know to contribute to the repo?",
-            name: "Contribution Guidelines"
+            name: "Contribution"
         },
         {
             //ask for github username
@@ -66,29 +66,36 @@ const questions = () => {
 
 const generateReadMe = (answer) =>
     `# Readme
-<p>${answer.Title}</p>
+${answer.Title}
+
 ## Description
-<p>${answer.Description}</p>
+${answer.Description}
 
 ## Table of Contents
 
 
 ## Installations
+To install necessary dependencies, run the following command followed by the module name:
 
+${answer.Installation}
 
 ## Usage
-
+${answer.Usage}
 
 ## License
-
+This project is licensed under the ${answer.License} license.
 
 ## Contributing
-
+${answer.Contribution}
 
 ## Tests
+To run tests run the following command:
 
+${answer.Tests}
 
-## Questions`;
+## Questions
+If you have any questions contact me at ${answer.Email}.
+Find more of my work at (https://github.com${answer.GitHub}/)`;
 
 const init = () => {
     questions()
