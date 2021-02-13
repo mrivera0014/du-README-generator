@@ -1,1 +1,0 @@
-# du-README-generator
