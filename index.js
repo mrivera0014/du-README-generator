@@ -2,6 +2,7 @@ const inquirer = require('inquirer')
 const fs = require('fs')
 const util = require('util');
 
+const generateReadMe = require('./util/generateMarkdown')
 const writeFileAsync = util.promisify(fs.writeFile)
 
 const questions = () => {
@@ -23,7 +24,7 @@ const questions = () => {
             //will have choices to tab up and down--default answer? can be overridden
             type: "list",
             message: "What kind of license does/should your project have?",
-            choices: ["MIT", "Apache 2.0", "Boost", "Other", "None"],
+            choices: ["MIT", "Apache 2.0", "Boost", "None"],
             name: "License"
         },
         {
@@ -64,38 +65,38 @@ const questions = () => {
     ])
 }
 
-const generateReadMe = (answer) =>
-    `# Readme
-${answer.Title}
+// const generateReadMe = (answer) =>
+//     `# Readme
+// ${answer.Title}
 
-## Description
-${answer.Description}
+// ## Description
+// ${answer.Description}
 
-## Table of Contents
+// ## Table of Contents
 
 
-## Installations
-To install necessary dependencies, run the following command followed by the module name:
+// ## Installations
+// To install necessary dependencies, run the following command followed by the module name:
 
-${answer.Installation}
+// ${answer.Installation}
 
-## Usage
-${answer.Usage}
+// ## Usage
+// ${answer.Usage}
 
-## License
-This project is licensed under the ${answer.License} license.
+// ## License
 
-## Contributing
-${answer.Contribution}
 
-## Tests
-To run tests run the following command:
+// ## Contributing
+// ${answer.Contribution}
 
-${answer.Tests}
+// ## Tests
+// To run tests run the following command:
 
-## Questions
-If you have any questions contact me at ${answer.Email}.
-Find more of my work at (https://github.com${answer.GitHub}/)`;
+// ${answer.Tests}
+
+// ## Questions
+// If you have any questions contact me at ${answer.Email}.
+// Find more of my work at (https://github.com${answer.GitHub}/)`;
 
 const init = () => {
     questions()
