@@ -11,37 +11,37 @@ function renderLicenseBadge(License) {
     } else (License === "None"); {
         return ``
     }
-
-}
-
-function renderLicenseSection(License) {
-    if (License === "MIT") {
-        return `[![License: MIT](https://opensource.org/licenses/MIT)]`
-    } else if (License === "Apache 2.0") {
-        return `[![License](https://opensource.org/licenses/Apache-2.0)]`
-    } else if (License === "Boost") {
-        return `[![License](https://www.boost.org/LICENSE_1_0.txt)]`
-    } else (License === "None"); {
-        return ``
-    }
 }
 
 // function renderLicenseSection(License) {
 //     if (License === "MIT") {
-//         return `This project is licensed under the MIT license.`
+//         return `[![License: MIT](https://opensource.org/licenses/MIT)]`
 //     } else if (License === "Apache 2.0") {
-//         return `This project is licensed under the Apache 2.0 license.`
+//         return `[![License](https://opensource.org/licenses/Apache-2.0)]`
 //     } else if (License === "Boost") {
-//         return `This project is licensed under the Boost Software 1.0 license.`
+//         return `[![License](https://www.boost.org/LICENSE_1_0.txt)]`
 //     } else (License === "None"); {
 //         return ``
 //     }
 // }
+
+function renderLicenseSection(License) {
+    if (License === "MIT") {
+        return `This project is licensed under the MIT license.`
+    } else if (License === "Apache 2.0") {
+        return `This project is licensed under the Apache 2.0 license.`
+    } else if (License === "Boost") {
+        return `This project is licensed under the Boost Software 1.0 license.`
+    } else (License === "None"); {
+        return ``
+    }
+}
 const generateReadMe = (answer) =>
     `# ${renderLicenseBadge(answer.License)}
     
-    ##${answer.Title}   
+    ## ${answer.Title}
 
+    
 ## Description
 ${answer.Description}
 
