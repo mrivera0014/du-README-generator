@@ -15,11 +15,11 @@ function renderLicenseBadge(License) {
 
 function renderLicenseLink(License) {
     if (License === "MIT") {
-        return `[![License: MIT](https://opensource.org/licenses/MIT)]`
+        return `[MIT license.](https://opensource.org/licenses/MIT)`
     } else if (License === "Apache 2.0") {
-        return `[![License](https://opensource.org/licenses/Apache-2.0)]`
+        return `[Apache 2.0 license.](https://opensource.org/licenses/Apache-2.0)`
     } else if (License === "Boost") {
-        return `[![License](https://www.boost.org/LICENSE_1_0.txt)]`
+        return `[Boost Software 1.0 license.](https://www.boost.org/LICENSE_1_0.txt)`
     } else (License === "None"); {
         return ``
     }
@@ -27,11 +27,11 @@ function renderLicenseLink(License) {
 
 function renderLicenseSection(License) {
     if (License === "MIT") {
-        return `This project is licensed under the MIT license.`
+        return `This project is licensed under the `
     } else if (License === "Apache 2.0") {
-        return `This project is licensed under the Apache 2.0 license.`
+        return `This project is licensed under the `
     } else if (License === "Boost") {
-        return `This project is licensed under the Boost Software 1.0 license.`
+        return `This project is licensed under the`
     } else (License === "None"); {
         return ``
     }
