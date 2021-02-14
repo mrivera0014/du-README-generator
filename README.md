@@ -1,10 +1,10 @@
-# [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]
+# [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]
     
-    ## test 1
+    ## test
 
 
 ## Description
-test 1
+test
 
 ## Table of Contents
 
@@ -14,12 +14,12 @@ npm i
 
 
 ## Usage
-twst
+tst
 
 ## License
 
 This project is licensed under the 
-[MIT license.](https://opensource.org/licenses/MIT)
+[Apache 2.0 license.](https://opensource.org/licenses/Apache-2.0)
 
 ## Contributing
 test
