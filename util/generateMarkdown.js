@@ -3,7 +3,7 @@ const index = require('../index')
 
 function renderLicenseSection(License) {
     if (License === "MIT") {
-        return `[![License: MIT]](https://opensource.org/licenses/MIT)]`
+        return `[![License: MIT](https://opensource.org/licenses/MIT)]`
     } else if (License === "Apache 2.0") {
         return `[![License](https://opensource.org/licenses/Apache-2.0)]`
     } else if (License === "Boost") {
