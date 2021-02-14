@@ -3,7 +3,7 @@ const index = require('../index')
 
 function renderLicenseBadge(License) {
     if (License === "MIT") {
-        return `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)`
+        return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]`
     } else if (License === "Apache 2.0") {
         return `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]`
     } else if (License === "Boost") {
@@ -17,7 +17,7 @@ function renderLicenseBadge(License) {
 
 function renderLicenseLink(License) {
     if (License === "MIT") {
-        return `[![License: MPL 2.0](https://opensource.org/licenses/MPL-2.0)]`
+        return `[![License: MIT](https://opensource.org/licenses/MIT)]`
     } else if (License === "Apache 2.0") {
         return `[![License](https://opensource.org/licenses/Apache-2.0)]`
     } else if (License === "Boost") {
@@ -32,7 +32,7 @@ function renderLicenseSection(License) {
     if (License === "MIT") {
         return `This project is licensed under the MIT license.`
     } else if (License === "Apache 2.0") {
-        return `This project is licensed under the Apache 2.0 license.`
+        return `This project is licensed under the Apache 2.0 license. `
     } else if (License === "Boost") {
         return `This project is licensed under the Boost Software 1.0 license.`
     } else (License === "None"); {
@@ -43,7 +43,10 @@ renderLicenseSection()
 // console.log("LicenseSection works?") it works so far..
 
 const generateReadMe = (answer) =>
-    `#${answer.Title} ${renderLicenseBadge(answer.License)}
+    `${renderLicenseBadge(answer.License)}
+
+#${answer.Title}
+
 
 ## Description
 ${answer.Description}
@@ -81,3 +84,4 @@ Find more of my work at (https://github.com${answer.GitHub}/)`;
 module.exports = generateReadMe;
 
 
+// [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
