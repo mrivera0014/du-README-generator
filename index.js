@@ -65,39 +65,6 @@ const questions = () => {
     ])
 }
 
-// const generateReadMe = (answer) =>
-//     `# Readme
-// ${answer.Title}
-
-// ## Description
-// ${answer.Description}
-
-// ## Table of Contents
-
-
-// ## Installations
-// To install necessary dependencies, run the following command followed by the module name:
-
-// ${answer.Installation}
-
-// ## Usage
-// ${answer.Usage}
-
-// ## License
-
-
-// ## Contributing
-// ${answer.Contribution}
-
-// ## Tests
-// To run tests run the following command:
-
-// ${answer.Tests}
-
-// ## Questions
-// If you have any questions contact me at ${answer.Email}.
-// Find more of my work at (https://github.com${answer.GitHub}/)`;
-
 const init = () => {
     questions()
         .then((answer) => writeFileAsync('README.md', generateReadMe(answer)))

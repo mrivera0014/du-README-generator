@@ -1,8 +1,8 @@
 # Readme
-t
+n
 
 ## Description
-t
+n
 
 ## Table of Contents
 
@@ -10,22 +10,22 @@ t
 ## Installations
 To install necessary dependencies, run the following command followed by the module name:
 
-t
+npm i
 
 ## Usage
-t
+n
 
 ## License
 
 
 ## Contributing
-t
+n
 
 ## Tests
 To run tests run the following command:
 
-t
+npm test
 
 ## Questions
-If you have any questions contact me at t.
-Find more of my work at (https://github.comt/)
+If you have any questions contact me at n.
+Find more of my work at (https://github.comn/)
