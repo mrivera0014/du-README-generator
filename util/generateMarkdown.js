@@ -1,32 +1,32 @@
 const index = require('../index')
 
 
-// function renderLicenseBadge(License) {
-//     if (License === "MIT") {
-//         return `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)`
-//     } else if (License === "Apache 2.0") {
-//         return `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`
-//     } else if (License === "Boost") {
-//         return `[![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)`
-//     } else (License === "None"); {
-//         return ``
-//     }
-// }
-// renderLicenseBadge()
-// console.log("License works?")
+function renderLicenseBadge(License) {
+    if (License === "MIT") {
+        return `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)`
+    } else if (License === "Apache 2.0") {
+        return `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]`
+    } else if (License === "Boost") {
+        return `[![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)]`
+    } else (License === "None"); {
+        return ``
+    }
+}
 
-// function renderLicenseLink(License) {
-//     if (License === "MIT") {
-//         return `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)`
-//     } else if (License === "Apache 2.0") {
-//         return `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`
-//     } else if (License === "Boost") {
-//         return `[![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)`
-//     } else (License === "None"); {
-//         return ``
-//     }
 
-// }
+
+function renderLicenseLink(License) {
+    if (License === "MIT") {
+        return `[![License: MPL 2.0](https://opensource.org/licenses/MPL-2.0)]`
+    } else if (License === "Apache 2.0") {
+        return `[![License](https://opensource.org/licenses/Apache-2.0)]`
+    } else if (License === "Boost") {
+        return `[![License](https://www.boost.org/LICENSE_1_0.txt)]`
+    } else (License === "None"); {
+        return ``
+    }
+
+}
 
 function renderLicenseSection(License) {
     if (License === "MIT") {
@@ -53,16 +53,16 @@ ${answer.Description}
 
 
 ## Installations
-${renderLicenseSection(answer.License)}
-
 ${answer.Installation}
+
 
 ## Usage
 ${answer.Usage}
 
 ## License
-
-
+${renderLicenseSection(answer.License)}
+${renderLicenseLink(answer.License)}
+${renderLicenseBadge(answer.License)}
 ## Contributing
 ${answer.Contribution}
 

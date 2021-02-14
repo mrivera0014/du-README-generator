@@ -68,7 +68,7 @@ const questions = () => {
 const init = () => {
     questions()
         .then((answer) => writeFileAsync('README.md', generateReadMe(answer)))
-        .then(() => console.log('It works??'))
+        .then(() => console.log('README.md file created.'))
         .catch((err) => console.error(err))
 
 }
