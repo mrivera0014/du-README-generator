@@ -13,17 +13,17 @@ function renderLicenseBadge(License) {
     }
 }
 
-// function renderLicenseSection(License) {
-//     if (License === "MIT") {
-//         return `[![License: MIT](https://opensource.org/licenses/MIT)]`
-//     } else if (License === "Apache 2.0") {
-//         return `[![License](https://opensource.org/licenses/Apache-2.0)]`
-//     } else if (License === "Boost") {
-//         return `[![License](https://www.boost.org/LICENSE_1_0.txt)]`
-//     } else (License === "None"); {
-//         return ``
-//     }
-// }
+function renderLicenseLink(License) {
+    if (License === "MIT") {
+        return `[![License: MIT](https://opensource.org/licenses/MIT)]`
+    } else if (License === "Apache 2.0") {
+        return `[![License](https://opensource.org/licenses/Apache-2.0)]`
+    } else if (License === "Boost") {
+        return `[![License](https://www.boost.org/LICENSE_1_0.txt)]`
+    } else (License === "None"); {
+        return ``
+    }
+}
 
 function renderLicenseSection(License) {
     if (License === "MIT") {
@@ -41,7 +41,7 @@ const generateReadMe = (answer) =>
     
     ## ${answer.Title}
 
-    
+
 ## Description
 ${answer.Description}
 
@@ -58,6 +58,7 @@ ${answer.Usage}
 ## License
 
 ${renderLicenseSection(answer.License)}
+${renderLicenseLink(answer.License)}
 
 ## Contributing
 ${answer.Contribution}
