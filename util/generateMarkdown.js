@@ -38,7 +38,9 @@ function renderLicenseSection(License) {
 //     }
 // }
 const generateReadMe = (answer) =>
-    `#${answer.Title}   ${renderLicenseBadge(answer.License)}
+    `# ${renderLicenseBadge(answer.License)}
+    
+    ##${answer.Title}   
 
 ## Description
 ${answer.Description}

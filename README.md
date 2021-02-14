@@ -1,7 +1,9 @@
-#testing   [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]
+# [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]
+    
+    ##testing   
 
 ## Description
-create file
+testing
 
 ## Table of Contents
 
@@ -11,14 +13,14 @@ npm i
 
 
 ## Usage
-n/a
+testing
 
 ## License
 
-[![License](https://opensource.org/licenses/Apache-2.0)]
+[![License: MIT](https://opensource.org/licenses/MIT)]
 
 ## Contributing
-hello
+testing
 
 ## Tests
 To run tests run the following command:
