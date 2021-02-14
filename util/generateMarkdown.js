@@ -26,12 +26,8 @@ function renderLicenseLink(License) {
 }
 
 function renderLicenseSection(License) {
-    if (License === "MIT") {
+    if (License === "MIT" || "Apache 2.0" || "Boost") {
         return `This project is licensed under the `
-    } else if (License === "Apache 2.0") {
-        return `This project is licensed under the `
-    } else if (License === "Boost") {
-        return `This project is licensed under the`
     } else (License === "None"); {
         return ``
     }
