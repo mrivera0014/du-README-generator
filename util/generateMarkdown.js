@@ -43,6 +43,9 @@ const generateReadMe = (answer) =>
 ${answer.Description}
 
 ## Table of Contents
+[## Title](${answer.Title})
+[## Description](${answer.Description})
+
 
 
 ## Installations
@@ -74,6 +77,3 @@ Find more of my work at (https://github.com${answer.GitHub}/)`;
 
 
 module.exports = generateReadMe;
-
-// ${ renderLicenseSection(answer.License) }
-// ${ renderLicenseLink(answer.License) }
