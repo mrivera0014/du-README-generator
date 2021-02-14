@@ -1,7 +1,7 @@
 #README-Generator 
 
 ## Description
-Creates a README file based on user input.
+created file based on user input.
 
 ## Table of Contents
 
@@ -11,14 +11,14 @@ npm i
 
 
 ## Usage
-N/A
+n/a
 
 ## License
 
-[![License: MIT]](https://opensource.org/licenses/MIT)]
+[![License: MIT](https://opensource.org/licenses/MIT)]
 
 ## Contributing
-Contact me
+contact me
 
 ## Tests
 To run tests run the following command:
@@ -26,5 +26,5 @@ To run tests run the following command:
 npm test
 
 ## Questions
-If you have any questions contact me at mrivera0014@gmail.com.
-Find more of my work at (https://github.commrivera0014/)
+If you have any questions contact me at .
+Find more of my work at (https://github.com/)
