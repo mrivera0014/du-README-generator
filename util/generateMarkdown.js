@@ -1,6 +1,19 @@
 const index = require('../index')
 
 
+function renderLicenseBadge(License) {
+    if (License === "MIT") {
+        return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]`
+    } else if (License === "Apache 2.0") {
+        return `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]`
+    } else if (License === "Boost") {
+        return `[![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)]`
+    } else (License === "None"); {
+        return ``
+    }
+
+}
+
 function renderLicenseSection(License) {
     if (License === "MIT") {
         return `[![License: MIT](https://opensource.org/licenses/MIT)]`
@@ -12,21 +25,6 @@ function renderLicenseSection(License) {
         return ``
     }
 }
-
-
-
-// function renderLicenseLink(License) {
-//     if (License === "MIT") {
-//         return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]`
-//     } else if (License === "Apache 2.0") {
-//         return `[![License](https://opensource.org/licenses/Apache-2.0)]`
-//     } else if (License === "Boost") {
-//         return `[![License](https://www.boost.org/LICENSE_1_0.txt)]`
-//     } else (License === "None"); {
-//         return ``
-//     }
-
-// }
 
 // function renderLicenseSection(License) {
 //     if (License === "MIT") {
@@ -40,7 +38,7 @@ function renderLicenseSection(License) {
 //     }
 // }
 const generateReadMe = (answer) =>
-    `#${answer.Title} 
+    `#${answer.Title}   ${renderLicenseBadge(answer.License)}
 
 ## Description
 ${answer.Description}
