@@ -43,8 +43,14 @@ const generateReadMe = (answer) =>
 ${answer.Description}
 
 ## Table of Contents
-[## Title](${answer.Title})
-[## Description](${answer.Description})
+[Title](##Title)
+[Description](##Description)
+[Installations](##Installations)
+[Usage](##Usage)
+[License](##License)
+[Contributing](##Contributing)
+[Questions](##Questions)
+
 
 
 
