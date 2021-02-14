@@ -1,4 +1,4 @@
-# [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]
+# [![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)]
     
     ## test
 
@@ -14,12 +14,12 @@ npm i
 
 
 ## Usage
-tst
+test
 
 ## License
 
 This project is licensed under the 
-[Apache 2.0 license.](https://opensource.org/licenses/Apache-2.0)
+[Boost Software 1.0 license.](https://www.boost.org/LICENSE_1_0.txt)
 
 ## Contributing
 test
