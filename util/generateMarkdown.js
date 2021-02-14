@@ -43,8 +43,7 @@ renderLicenseSection()
 // console.log("LicenseSection works?") it works so far..
 
 const generateReadMe = (answer) =>
-    `# Readme
-${answer.Title}
+    `#${answer.Title} ${renderLicenseBadge(answer.License)}
 
 ## Description
 ${answer.Description}
@@ -62,7 +61,7 @@ ${answer.Usage}
 ## License
 ${renderLicenseSection(answer.License)}
 ${renderLicenseLink(answer.License)}
-${renderLicenseBadge(answer.License)}
+
 ## Contributing
 ${answer.Contribution}
 
