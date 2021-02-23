@@ -8,7 +8,7 @@ function renderLicenseBadge(License) {
         return `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]`
     } else if (License === "Boost") {
         return `[![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)]`
-    } else (License === "None"); {
+    } else {
         return ``
     }
 }
@@ -20,15 +20,17 @@ function renderLicenseLink(License) {
         return `[Apache 2.0 license.](https://opensource.org/licenses/Apache-2.0)`
     } else if (License === "Boost") {
         return `[Boost Software 1.0 license.](https://www.boost.org/LICENSE_1_0.txt)`
-    } else (License === "None"); {
+    } else {
         return ``
     }
 }
 
 function renderLicenseSection(License) {
-    if (License === "MIT" || "Apache 2.0" || "Boost") {
-        return `This project is licensed under the `
-    } else (License === "None"); {
+    if (License === "MIT" || License === "Apache 2.0" || License === "Boost") {
+        return `## License
+        
+        This project is licensed under the `
+    } else {
         return ``
     }
 }
@@ -61,7 +63,7 @@ ${answer.Installation}
 ## Usage
 ${answer.Usage}
 
-## License
+
 
 ${renderLicenseSection(answer.License)}
 ${renderLicenseLink(answer.License)}
