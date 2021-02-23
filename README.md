@@ -1,5 +1,3 @@
-# [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]
-    
  ## Title
  README-Generator
 
@@ -41,4 +39,4 @@ npm test
 
 ## Questions
 If you have any questions contact me at mrivera0014@gmail.com.
-Find more of my work at (https://github.commrivera0014/)
+Find more of my work at (https://github.com/mrivera0014/)
