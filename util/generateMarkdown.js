@@ -78,7 +78,7 @@ ${answer.Tests}
 
 ## Questions
 If you have any questions contact me at ${answer.Email}.
-Find more of my work at (https://github.com${answer.GitHub}/)`;
+Find more of my work at (https://github.com/${answer.GitHub}/)`;
 
 
 
