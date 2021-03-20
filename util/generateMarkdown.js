@@ -1,4 +1,4 @@
-const index = require('../index')
+bconst index = require('../index')
 
 
 function renderLicenseBadge(License) {
@@ -46,11 +46,23 @@ ${answer.Description}
 
 ## Table of Contents
 * [Title](##Title)
+</b>
+
 * [Description](##Description)
+</b>
+
 * [Installations](##Installations)
+</b>
+
 * [Usage](##Usage)
+</b>
+
 * [License](##License)
+</b>
+
 * [Contributing](##Contributing)
+</b>
+
 * [Questions](##Questions)
 
 

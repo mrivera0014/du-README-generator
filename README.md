@@ -6,13 +6,25 @@
 Creates readme file based on user input
 
 ## Table of Contents
-[Title](##Title)
-[Description](##Description)
-[Installations](##Installations)
-[Usage](##Usage)
-[License](##License)
-[Contributing](##Contributing)
-[Questions](##Questions)
+*[Title](##Title)
+</b>
+
+*[Description](##Description)
+</b>
+
+*[Installations](##Installations)
+</b>
+
+*[Usage](##Usage)
+</b>
+
+*[License](##License)
+</b>
+
+*[Contributing](##Contributing)
+</b>
+
+*[Questions](##Questions)
 
 
 
