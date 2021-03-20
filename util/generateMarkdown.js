@@ -45,13 +45,13 @@ const generateReadMe = (answer) =>
 ${answer.Description}
 
 ## Table of Contents
-[Title](##Title)
-[Description](##Description)
-[Installations](##Installations)
-[Usage](##Usage)
-[License](##License)
-[Contributing](##Contributing)
-[Questions](##Questions)
+* [Title](##Title)
+* [Description](##Description)
+* [Installations](##Installations)
+* [Usage](##Usage)
+* [License](##License)
+* [Contributing](##Contributing)
+* [Questions](##Questions)
 
 
 
